@@ -1,0 +1,132 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.footer{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: black;
+    padding: 48px 48px 6px 48px;
+}
+.accordion{
+    display: flex;
+    column-gap: 80px;
+}
+input{
+    display: none;
+}
+.title{
+    display: none;
+}
+.contents h3{
+    color: #fff;
+}
+.contents li{
+    color: #fff;
+    list-style-type: none;
+    padding-bottom: 6px;
+}
+.contents a{
+    text-decoration: none;
+    
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.copyright-text{
+    text-align: center;
+    color: #FAFAFA;
+    font-size: 14px;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+@media only screen and (max-width: 600px) {
+.footer{
+    padding: px;
+}
+
+ .wrapper{
+    background-color: black;
+    width:90vw;
+}
+.content-title{
+    display: none;
+}
+input{ 
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.accordion{
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+}
+.item{
+    overflow: hidden;
+}
+.title{
+    background: #fff;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+.title:after{
+    content:"\276F";
+    width:1em;
+    height:1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+.contents {
+    background-color: #fff;
+    color: red; 
+    padding: 0em 1em;
+    max-height: 0;
+    transition: all 0.35s;
+    
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+input[type="checkbox"] + .item .title:after {
+    transform: rotate(90deg);
+}
+
+input[type="checkbox"]:checked + .item .contents {
+    
+    max-height: 100vh;
+    padding: 1em;
+}
+
+.contents li{
+    padding: 16px;
+    margin: 4px;
+    border: 1px solid gray;
+    font-size: 14px;
+}
+
+    }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    
+    
+}

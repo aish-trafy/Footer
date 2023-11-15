@@ -1,0 +1,113 @@
+.footer{
+    background-color: black;
+    position: absolute;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 48px 48px 6px 48px;
+}
+.box-footer{
+    display: grid;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.footer-contents{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, max-content));
+    justify-content: center; 
+    align-items: center; 
+    column-gap: 80px;
+    margin: 8px;
+}
+.items h3{
+    color: #FAFAFA;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0%;
+    padding-bottom:6px ;
+}
+.items li,a{
+    color: #FAFAFA;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom:6px ;
+}
+
+.socials{
+    display: grid;
+    grid-template-columns: repeat(5, auto); 
+    justify-content: center;
+    gap:20px;
+}
+
+.copy-rights{
+    margin: 8px;
+   
+    
+}
+.copyright-text{
+    text-align: center;
+    color: #FAFAFA;
+    font-size: 14px;
+    list-style-type: none;
+    text-decoration: none;
+    padding-bottom:6px ;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        padding: 8px 8px 0px 8px;
+    }
+
+    .box-footer {
+    display: flex;
+    flex-direction: column; 
+    row-gap: 20px;
+    align-items: center; /* Center items horizontally within .box-footer */
+    justify-content: center;
+    }
+
+    .footer-contents {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+       margin:0px;
+       
+    }
+    /* .items {
+        display: block;
+    } */
+    
+    .items li,a{
+        padding-bottom: 6px;
+        
+    }
+    
+    .copy-rights{
+        text-align: center;
+        align-self: center;
+    }
+    
+    }
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .box-footer {
+        justify-items: center;
+    }
+     
+    .footer-contents {
+        grid-template-columns: repeat(2, minmax(min-content, max-content));
+        column-gap: 80px; 
+        row-gap: 20px;
+    }
+    
+    .items {
+        display: grid;
+        align-self: baseline;
+    }
+    .items li,a{
+        padding-bottom: 4px;
+    }
+    
+}
